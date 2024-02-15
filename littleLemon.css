@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(184, 189, 187);
+}
+
+header{
+    display: grid;
+    grid-template-columns: "a b c";
+}
+
+
+header img{
+    grid-column: a;
+    width: 50rem;
+}
+
+ul{
+    display: grid;
+    font-size: larger;
+    grid-template-rows: "a home menue book about b" ;
+    background-color: rgb(16, 71, 37);
+
+}
+ul a{
+    font-size: 150%;
+    grid-row: home;
+    color:rgb(184, 189, 187);
+    text-decoration: none;
+}
+ul a:hover{
+    text-decoration: underline;
+    color:rgb(205, 183, 41);
+}
+
+main{
+    display:grid;
+    grid-template-areas: "a1 a1 a1" "a2  a3  a4";
+}
+
+
+article img{
+    margin-left: 40px;
+    
+}
+
+#article1{
+    background-image: url(test.jpg);
+    grid-area: a1;
+    color:black;
+    margin-left: 10;
+
+}
+#article1 h1{
+    font-size: 30px;
+}
+#article2, #article3, #article4{
+    text-align: center;
+    margin: 5px;
+    background-color: antiquewhite;
+
+
+}
